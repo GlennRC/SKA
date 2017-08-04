@@ -30,6 +30,7 @@ using namespace std;
 #include "ProcessControl.h"
 #include "MotionAnalyzer.h"
 #include "ShoulderAnalyzer.h"
+#include "QMathTest.cpp"
 
 static MotionAnalyzer* motion_analyzer = NULL;
 static ShoulderAnalyzer* shoulder_analyzer = NULL;

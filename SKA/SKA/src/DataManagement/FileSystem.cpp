@@ -21,7 +21,6 @@ using namespace std;
 #include <Core/Utilities.h>
 #include <DataManagement/FileSystem.h>
 
-#ifdef _WIN32
 
 char* FileSystem::backslashFilepath(char* path)
 {
@@ -62,6 +61,8 @@ const char* FileSystem::forwardslashFilepath(string& path)
 	}
 	return path.c_str();
 }
+
+#ifdef _WIN32
 
 bool FileSystem::makeDir(const char* path)
 {

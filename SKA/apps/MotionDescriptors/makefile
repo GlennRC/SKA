@@ -5,7 +5,7 @@ SKAROOT = ../../SKA
 SKAINCDIR = -I$(SKAROOT)/include
 SKALIBDIR = -L$(SKAROOT)/lib
 SKALIB = -lska
-GLLIBS = -lglut -lGLU -lGL
+GLLIBS = -framework GLUT -framework OpenGL -framework Cocoa
 
 SOURCES = AppMain.cpp AnimationControl.cpp AppGraphics.cpp CameraControl.cpp InputProcessing.cpp MotionAnalyzer.cpp ProcessControl.cpp ShoulderAnalyzer.cpp
 

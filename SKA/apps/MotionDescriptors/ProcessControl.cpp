@@ -105,11 +105,6 @@ bool ProcessControl::readCommandFile()
 			short fps = 120;
 			unsigned int i;
 
-			i = line.find("BVH=");
-			if (i != string::npos) {
-				motion_name = extractQuotedString(line, i + 4);
-				mctype = BVH;
-			}
 			if (mctype == UNK) {
 				i = line.find("AMC=");
 				if (i != string::npos) {
